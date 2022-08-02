@@ -1,0 +1,17 @@
+{% extends 'index.html'%}
+
+{% block content %}
+<br><br>
+<center>
+<h1>Enter the number to add:</h1>
+<form action='{{ url_for("add_num")}}' method="post"><br><br>
+	NAME   : <input type="text" name="nme"><br><br>
+	NUMBER : <input type="tel" name="num"><br><br>
+	<input type="submit" value="ADD">
+	
+</form></center>
+
+{{ d }}
+
+{% endblock %}
+
